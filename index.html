@@ -1,0 +1,29 @@
+<!--
+@author [Rojil Shrestha]
+@email [nepster4268@gmail.com]
+@create date 2022-09-08 13:33:54
+@modify date 2022-09-08 13:33:54
+@desc [detect active/inactive tabs of browser]
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Detect Tabs</title>
+</head>
+
+<body>
+    <script>
+        // when the user loses focus
+        window.addEventListener("blur", () => {
+            document.title = "Inactive tab/window";
+        });
+
+        // when the user's focus is back to your tab (website) again
+        window.addEventListener("focus", () => {
+            document.title = "Active tab/window";
+        });
+    </script>
+</body>
+
+</html>
